@@ -210,7 +210,9 @@ import java.util.ArrayList;
             mOtherIds.add(mLoadingView.getId());
             addView(mLoadingView, 0, layoutParams);
         }
-        showViewById(mLoadingView.getId());
+        if(mContentView != null){
+            mLoadingView.setVisibility(VISIBLE);
+        }
     }
 
     /**
