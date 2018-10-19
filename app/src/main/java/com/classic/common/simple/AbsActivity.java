@@ -80,6 +80,8 @@ public abstract class AbsActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.fab_content:
                 mMultipleStatusView.showContent();
+                mMultipleStatusView.showLoading();
+
                 break;
         }
         mFloatingActionMenu.toggle(false);
